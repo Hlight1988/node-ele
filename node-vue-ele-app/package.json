@@ -1,0 +1,28 @@
+{
+  "name": "node-vue-ele-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "node ./bin/www",
+    "server": "nodemon ./bin/www",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "element-ui": "^2.4.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.3.0",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "serve-favicon": "~2.4.5",
+    "mongoose": "latest",
+    "gravatar": "latest"
+  }
+}
